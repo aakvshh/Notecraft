@@ -1,0 +1,97 @@
+.parallaxContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1; /* Ensure the notecraft stays on top */
+}
+
+.fullimgWrapper {
+  position: relative;
+  z-index: -100;
+  overflow: hidden; 
+}
+
+.fullimg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  padding-top: 10vh;
+}
+
+.notecraft {
+  /* transform: translate(-50%, -50%); */
+  font-size: 8rem; 
+  color: white; 
+  font-weight: 400;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content-dragdrop{
+  margin-top: 8rem;
+  text-align: center;
+  color: #8ba3b8;
+  font-size: 2rem;
+  z-index: -2000;
+}
+
+
+
+
+form {
+  background-color: #ebf4ff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 33%;
+  min-height: 20rem;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #3182ce;
+  margin-top:5rem;
+  margin-bottom:10rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+form.dragActive {
+  background-color: #63b3ed;
+}
+
+input.hidden {
+  display: none;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+span.cursor-pointer {
+  cursor: pointer;
+  color: #3182ce;
+}
+
+div.files-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+div.files-container div {
+  display: flex;
+  flex-row: space-x-5;
+  margin-bottom: 5px;
+}
+
+span.text-red-500 {
+  cursor: pointer;
+  color: #e53e3e;
+}

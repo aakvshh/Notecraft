@@ -1,0 +1,38 @@
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 10vh;
+  }
+  
+  .about-content {
+    width: 50%;
+    margin-left: 2rem;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: white;
+    margin-bottom: 2.5rem;
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .about-image {
+    width: 35%;
+    z-index: -100;
+    margin: 5rem;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

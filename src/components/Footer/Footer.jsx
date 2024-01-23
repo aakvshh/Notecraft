@@ -5,29 +5,25 @@ const Footer = () => {
   return (
     <footer>    
     <div class="footer-col">
-            <h4>products</h4>
+            <h4>NoteCraft</h4>
             <ul>
-                <li><a href="#">teams</a></li>
-                <li><a href="#">advertising</a></li>
-                <li><a href="#">talent</a></li>
+                {/* <li><a href="#">Address</a></li> */}
+                <li><a href="#">notecraft@gmail.com</a></li>
+
             </ul>
         </div>
         <div class="footer-col">
-            <h4>network</h4>
+            <h4>Address</h4>
             <ul>
-                <li><a href="#">technology</a></li>
-                <li><a href="#">science</a></li>
-                <li><a href="#">business</a></li>
-                <li><a href="#">professional</a></li>
-                <li><a href="#">API</a></li>
+                <li><a href="#">Notecraft, Pune</a></li>
+
             </ul>
         </div>
         <div class="footer-col">
             <h4>company</h4>
             <ul>
-                <li><a href="#">about</a></li>
-                <li><a href="#">legal</a></li>
-                <li><a href="#">contact us</a></li>
+                <li><a href="/about">about</a></li>
+                <li><a href="/contact">contact us</a></li>
             </ul>
         </div>
         <div class="footer-col">
