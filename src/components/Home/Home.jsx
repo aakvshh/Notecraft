@@ -174,57 +174,57 @@ const Home = () => {
   const inputRef = useRef(null);
   const [files, setFiles] = useState([]);
 
-  function handleChange(e) {
-    e.preventDefault();
-    console.log("File has been added");
-    if (e.target.files && e.target.files[0]) {
-      console.log(e.target.files);
-      for (let i = 0; i < e.target.files.length; i++) {
-        setFiles((prevState) => [...prevState, e.target.files[i]]);
-      }
-    }
-  }
+  // function handleChange(e) {
+  //   e.preventDefault();
+  //   console.log("File has been added");
+  //   if (e.target.files && e.target.files[0]) {
+  //     console.log(e.target.files);
+  //     for (let i = 0; i < e.target.files.length; i++) {
+  //       setFiles((prevState) => [...prevState, e.target.files[i]]);
+  //     }
+  //   }
+  // }
 
-  function handleDrop(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      for (let i = 0; i < e.dataTransfer.files.length; i++) {
-        setFiles((prevState) => [...prevState, e.dataTransfer.files[i]]);
-      }
-    }
-  }
+  // function handleDrop(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   setDragActive(false);
+  //   if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+  //     for (let i = 0; i < e.dataTransfer.files.length; i++) {
+  //       setFiles((prevState) => [...prevState, e.dataTransfer.files[i]]);
+  //     }
+  //   }
+  // }
 
-  function handleDragLeave(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-  }
+  // function handleDragLeave(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   setDragActive(false);
+  // }
 
-  function handleDragOver(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(true);
-  }
+  // function handleDragOver(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   setDragActive(true);
+  // }
 
-  function handleDragEnter(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(true);
-  }
+  // function handleDragEnter(e) {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   setDragActive(true);
+  // }
 
-  function removeFile(fileName, idx) {
-    const newArr = [...files];
-    newArr.splice(idx, 1);
-    setFiles([]);
-    setFiles(newArr);
-  }
+  // function removeFile(fileName, idx) {
+  //   const newArr = [...files];
+  //   newArr.splice(idx, 1);
+  //   setFiles([]);
+  //   setFiles(newArr);
+  // }
 
-  function openFileExplorer() {
-    inputRef.current.value = "";
-    inputRef.current.click();
-  }
+  // function openFileExplorer() {
+  //   inputRef.current.value = "";
+  //   inputRef.current.click();
+  // }
 
   return (
     <div>
@@ -243,28 +243,28 @@ const Home = () => {
           className={`${
             dragActive ? "bg-blue-400" : "bg-blue-100"
           }  p-4 w-1/3 rounded-lg  min-h-[10rem] text-center flex flex-col items-center justify-center`}
-          onDragEnter={handleDragEnter}
+          // onDragEnter={handleDragEnter}
           onSubmit={(e) => e.preventDefault()}
-          onDrop={handleDrop}
-          onDragLeave={handleDragLeave}
-          onDragOver={handleDragOver}
+          // onDrop={handleDrop}
+          // onDragLeave={handleDragLeave}
+          // onDragOver={handleDragOver}
         >
           {/* this input element allows us to select files for upload. We make it hidden so we can activate it when the user clicks select files */}
           <input
             placeholder="fileInput"
             className="hidden"
-            ref={inputRef}
+            // ref={inputRef}
             type="file"
-            multiple={true}
-            onChange={handleChange}
-            accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf"
+            // multiple={true}
+            // onChange={handleChange}
+            accept="audio/*"
           />
 
           <p>
             Drag & Drop files or{" "}
             <span
               className="font-bold text-blue-600 cursor-pointer"
-              onClick={openFileExplorer}
+              // onClick={openFileExplorer}
             >
               <u>Select files</u>
             </span>{" "}
@@ -277,7 +277,7 @@ const Home = () => {
                 <span>{file.name}</span>
                 <span
                   className="text-red-500 cursor-pointer"
-                  onClick={() => removeFile(file.name, idx)}
+                  // onClick={() => removeFile(file.name, idx)}
                 >
                   remove
                 </span>
