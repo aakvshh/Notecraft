@@ -63,6 +63,7 @@ textarea {
   font-weight: 400;
   border-radius: 0.5rem;
   transition: background-color 0.3s ease;
+  cursor: pointer;
 }
 .form-container button:hover{
   background-color: #8ba3b8;

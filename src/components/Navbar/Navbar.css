@@ -28,7 +28,8 @@ body {
 }
 .header nav ul li a:hover,
 .header nav ul li a.active {
-    border-bottom-color: #030e16;
+
+    border-bottom-color: #cdcecf;
 }
 .header {
     position: fixed;
@@ -56,6 +57,7 @@ body {
     margin: 5px 0;
     background:#f9faed;
 }
+
 @media only screen and (max-width: 900px) {
     .header {
         padding: 0 30px;

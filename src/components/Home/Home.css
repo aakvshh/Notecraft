@@ -1,34 +1,32 @@
-.parallaxContainer {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1; /* Ensure the notecraft stays on top */
-}
 
 .fullimgWrapper {
   position: relative;
-  z-index: -100;
   overflow: hidden; 
 }
-
-.fullimg {
-  background-size: contain;
-  background-repeat: no-repeat;
+.image-container{
+  opacity: 0.8;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0.528)), url('/images/full.jpg');
+  background-size: cover;
   background-position: center;
-  width: 100%;
+  height: 100vh;
   padding-top: 10vh;
+
 }
 
-.notecraft {
-  /* transform: translate(-50%, -50%); */
-  font-size: 8rem; 
-  color: white; 
-  font-weight: 400;
+
+.heading h1{
+  color: rgb(255, 255, 255);
+  font-weight:400;
+  font-size: 10rem;
   position: absolute;
-  top: 20%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+
+.prediction{
+  text-align: center;
 }
 
 .content-dragdrop{
@@ -39,11 +37,14 @@
   z-index: -2000;
 }
 
+.display input{
+  font-size: 15px;
+}
 
 
-
-form {
-  background-color: #ebf4ff;
+.audio_form {
+  color: #000000;
+  background-color: #c9dbde;
   padding: 20px;
   border-radius: 8px;
   width: 33%;
@@ -53,7 +54,7 @@ form {
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  border: 2px dashed #3182ce;
+  border: 2px #3182ce;
   margin-top:5rem;
   margin-bottom:10rem;
   margin-left: auto;
@@ -62,7 +63,7 @@ form {
 }
 
 form.dragActive {
-  background-color: #63b3ed;
+  background-color: #243c54;
 }
 
 input.hidden {
@@ -75,7 +76,8 @@ p {
 
 span.cursor-pointer {
   cursor: pointer;
-  color: #3182ce;
+  color: #296993;
+  font-weight: 800;
 }
 
 div.files-container {
@@ -87,11 +89,69 @@ div.files-container {
 
 div.files-container div {
   display: flex;
-  flex-row: space-x-5;
+  /* flex-row: space-x-5; */
   margin-bottom: 5px;
 }
 
 span.text-red-500 {
   cursor: pointer;
   color: #e53e3e;
+}
+
+.display{
+  display: flex;
+  align-items: center;
+}
+.btn{
+  margin-top: 10px;
+  background: #63b3ed;
+  padding: 12px 22px;
+  border-radius: 1em;
+  font-size: 14px;
+  font-weight: 700;
+  /* outline: none; */
+  border: 3px solid #111;
+  cursor: pointer;
+}
+.btn:hover{
+  background: #3182ce;
+  color: #fff;
+}
+
+.prediction{
+  color: #fff;
+  margin-bottom: 4em;
+  background-color: #8ba3b8
+  ;
+  padding: 20px;
+  border-radius: 8px;
+  width: 50%;
+  margin: 20px auto;
+  text-align: center;
+  color: #fff;
+  white-space: pre-wrap;
+}
+.prediction-box pre {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.note {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.note-gap {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .note {
+    margin-right: 5px; 
+  }
 }

@@ -62,7 +62,6 @@ ul li a{
 
 ul li a:hover{
     color: white;
-    padding-left: 2px;
 }
 
 .links a{
@@ -76,6 +75,8 @@ ul li a:hover{
     line-height: 44px;
     border-radius: 50%;
     transition: 0.4s;
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 .links a:hover{
