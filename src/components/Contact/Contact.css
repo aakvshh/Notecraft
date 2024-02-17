@@ -69,3 +69,11 @@ textarea {
   background-color: #8ba3b8;
   box-shadow: 0 0 10px #141d23;
 }
+
+@media only screen and (max-width: 750px) {
+  .contact-us-container h2{
+    font-weight:bolder;
+    font-size: 3rem;
+    padding-bottom: 5vh;
+  }
+}

@@ -47,7 +47,7 @@
   background-color: #c9dbde;
   padding: 20px;
   border-radius: 8px;
-  width: 33%;
+  width: 50%;
   min-height: 20rem;
   text-align: center;
   display: flex;
@@ -153,5 +153,26 @@ span.text-red-500 {
 @media screen and (max-width: 768px) {
   .note {
     margin-right: 5px; 
+  }
+  .heading h1{
+    color: rgb(255, 255, 255);
+    font-weight:400;
+    font-size: 6rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }  
+}
+
+@media screen and (max-width: 500px) {
+   .heading h1{
+  color: rgb(255, 255, 255);
+  font-weight:400;
+  font-size: 4rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
   }
 }
