@@ -49,10 +49,7 @@
   align-items: center;
   justify-content: center;
   border: 2px #3182ce;
-  margin-top:5rem;
-  margin-bottom:10rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 5rem auto;
   z-index: -1;
 }
 
@@ -103,7 +100,6 @@ span.text-red-500 {
   border-radius: 1em;
   font-size: 14px;
   font-weight: 700;
-  /* outline: none; */
   border: 3px solid #111;
   cursor: pointer;
 }
@@ -124,9 +120,27 @@ span.text-red-500 {
   margin-bottom: 4rem;
 }
 
+.play_audio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.play_audio p{
+  color:#8ba3b8;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+
 .prediction h3{
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem ;
 }
 
 .prediction-box pre {
