@@ -40,6 +40,12 @@ function Contact() {
       });
 
       console.log('Feedback submitted successfully:', response.data);
+      setName('');
+      setEmail('');
+      setFeedback('');
+      setErrors({});
+      alert('Feedback submitted successfully!');
+    
     } catch (error) {
       console.error('Error submitting feedback:', error.message);
     }

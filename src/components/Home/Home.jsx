@@ -115,7 +115,7 @@ const Home = () => {
         </div>
         {predictedNote && (
           <div className='prediction'>
-            <h3>Predicted note is: </h3>
+            <h3>Predicted notes: </h3>
             <div className="notes-container">
             {predictedNote.map((note, index) => (
             <span key={index} className="note">{note}{(index + 1) % 10 === 0 ? <br /> : <span className="note-gap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>}</span>
