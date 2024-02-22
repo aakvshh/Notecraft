@@ -111,14 +111,15 @@ const Home = () => {
       <div className='fullimgWrapper'>
         <div className='image-container'>
           <div className='heading'>
-            <h1>Notecraft</h1>
+            <h1>NoteCraft</h1>
+            <p>A Music Note Recognition System</p>
           </div>
         </div>
       </div>
 
       <div className='flex items-center justify-center h-screen'>
         <div className='content-dragdrop'>
-          Files in, notes out! 🎼 
+          Music in, notes out! 🎼 
           <p>Unleash the hidden tunes by dropping your files with NoteCraft</p>
         </div>
         <div className='audio_form'>
@@ -137,7 +138,7 @@ const Home = () => {
             onChange={handleFile}
             accept='audio/*'
           />
-          <p>
+          <p className='drag'>
             Drag & Drop files or{' '}
             <span
               className='font-bold text-blue-600 cursor-pointer'
@@ -147,7 +148,7 @@ const Home = () => {
             </span>{' '}
             to upload
           </p>
-          {selectedFile && <p>Selected file: {selectedFile.name}</p>}
+          {selectedFile && <p className='drag'>Selected file: {selectedFile.name}</p>}
           <button className='btn' type='submit'>
             Submit
           </button>

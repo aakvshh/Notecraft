@@ -13,15 +13,37 @@
 }
 
 
-.heading h1{
-  color: rgb(255, 255, 255);
-  font-weight:400;
-  font-size: 10rem;
+.heading {
+
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  color: rgb(255, 255, 255);
 }
+
+.heading h1{
+  font-weight:650;
+  font-family: "Lato";
+  font-size: 10rem;
+
+  letter-spacing: -2px;
+  text-shadow:
+  0px 0px 0 rgba(255,255,255,.5),
+  1px 1px 0 rgba(255, 255, 255, 0.205),
+  /* 10px 10px 10px rgb(255, 255, 255), */
+  2px 2px 4px rgba(255, 255, 255, 0.521),
+  2px 2px 4px rgba(41, 41, 41, 0.479);
+}
+
+.heading p{
+  color: rgb(206, 206, 206);
+  font-family: "Satisfy", cursive;
+  text-align: center;
+  font-size: 2rem;
+  margin-top:10px;
+}
+
 
 .content-dragdrop{
   margin-top: 8rem;
@@ -52,6 +74,7 @@
   margin: 5rem auto;
   z-index: -1;
 }
+
 
 form.dragActive {
   background-color: #243c54;
@@ -98,9 +121,9 @@ span.text-red-500 {
   background: #63b3ed;
   padding: 12px 22px;
   border-radius: 1em;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  border: 3px solid #111;
+  border: 2px solid #111;
   cursor: pointer;
 }
 .btn:hover{
@@ -138,6 +161,7 @@ span.text-red-500 {
 }
 
 
+
 .prediction h3{
   font-size: 1.5rem;
   margin-bottom: 1rem ;
@@ -154,6 +178,14 @@ span.text-red-500 {
 
 }
 
+.audio_form p{
+  font-size: 1.5rem;
+}
+
+.audio_form .btn{
+  margin-top: 25px;
+}
+
 .note {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -163,35 +195,42 @@ span.text-red-500 {
   visibility: hidden;
 }
 
+@media screen and (max-width:850px) {
+  .play_audio{
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .note {
     margin-right: 5px; 
   }
   .heading h1{
-    color: rgb(255, 255, 255);
-    font-weight:400;
     font-size: 6rem;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
   }  
+  .heading p{
+    font-size: 1.5rem;
+  }
   .content-dragdrop{
     font-size: 1.75rem;
   }
+  .audio_form .drag{
+    font-size: 1.25rem;
+  }
+ 
 }
 
 @media screen and (max-width: 500px) {
    .heading h1{
-  color: rgb(255, 255, 255);
-  font-weight:400;
   font-size: 4rem;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
   }
   .content-dragdrop{
     font-size: 1.5rem;
+  }
+  .heading p{
+    font-size: 1rem;
+  }
+  .play_audio{
+    width: 70%;
   }
 }
