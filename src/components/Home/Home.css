@@ -22,18 +22,29 @@
   color: rgb(255, 255, 255);
 }
 
-.heading h1{
-  font-weight:650;
-  font-family: "Lato";
+/* .heading h1{
+  font-weight:500;
   font-size: 10rem;
 
   letter-spacing: -2px;
   text-shadow:
   0px 0px 0 rgba(255,255,255,.5),
   1px 1px 0 rgba(255, 255, 255, 0.205),
-  /* 10px 10px 10px rgb(255, 255, 255), */
   2px 2px 4px rgba(255, 255, 255, 0.521),
   2px 2px 4px rgba(41, 41, 41, 0.479);
+} */
+
+.heading h1{
+  font-weight:500;
+  font-size: 10rem;
+  background-color: #f3ec78;
+  background-image: radial-gradient(#9fa7c4, #d4ce97);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  letter-spacing: -3px;
 }
 
 .heading p{
@@ -207,6 +218,7 @@ span.text-red-500 {
   }
   .heading h1{
     font-size: 6rem;
+    font-family: "Work Sans", sans-serif;
   }  
   .heading p{
     font-size: 1.5rem;
